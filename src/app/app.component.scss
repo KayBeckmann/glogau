@@ -5,6 +5,10 @@
   width: 100dvw;
 }
 
+.background {
+  background-color: var(--main-bg-color);
+}
+
 .container {
   width: 100dvw;
   height: 100dvh;
@@ -45,6 +49,11 @@
       font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
     }
   }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .mat-toolbar-row {

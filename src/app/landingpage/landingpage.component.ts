@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { MatIconModule } from "@angular/material/icon";
 
 @Component({
-  selector: 'app-landingpage',
+  selector: "app-landingpage",
   standalone: true,
-  imports: [],
-  templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.scss'
+  imports: [MatIconModule],
+  templateUrl: "./landingpage.component.html",
+  styleUrl: "./landingpage.component.scss"
 })
-export class LandingpageComponent {
-
-}
+export class LandingpageComponent {}
