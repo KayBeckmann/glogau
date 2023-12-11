@@ -1,12 +1,66 @@
-html {
-  scroll-behavior: smooth;
-  height: 100%;
+////////////////////////////////////////////////////////////////////
+/// CLASSES
+////////////////////////////////////////////////////////////////////
+.wrapper {
+  width: 100dvw;
 }
-body {
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.sidenav {
+  background-color: var(--main-bg-color);
+}
+
+.sidenav-content {
   height: 100%;
-  margin: 0;
-  background-color: #141d2f;
-  // font-family: "PT Sans", "Open Sans", sans-serif;
-  font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
+  width: 100%;
+}
+
+.nav-content {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--main-bg-color);
+
+    &:hover {
+      background-color: var(--main-bg-color-hover);
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+    }
+  }
+}
+
+.mat-toolbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+////////////////////////////////////////////////////////////////////
+/// IDs
+////////////////////////////////////////////////////////////////////
+#headname {
+  text-decoration: none;
   color: white;
 }
