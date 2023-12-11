@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #141d2f;
+  // font-family: "PT Sans", "Open Sans", sans-serif;
+  font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
+  color: white;
+}
