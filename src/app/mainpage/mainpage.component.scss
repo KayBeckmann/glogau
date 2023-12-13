@@ -2,6 +2,7 @@
   display: grid;
   height: calc(100dvh - var(--menu-height) - var(--footer-height));
   grid-template-columns: 2fr 5fr 4fr;
+  gap: var(--padding);
   background-image: linear-gradient(
       rgba(63, 81, 181, 0.6),
       rgba(63, 81, 181, 0.05)
@@ -11,4 +12,26 @@
   background-size: cover;
   color: white;
   padding-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    overflow-y: auto;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+
+    .gallery {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
 }
