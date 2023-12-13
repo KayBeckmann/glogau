@@ -23,3 +23,23 @@
     color: white;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .left,
+    .right {
+      margin: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    .right {
+      margin-bottom: 5px;
+    }
+  }
+}
