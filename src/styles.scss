@@ -12,6 +12,7 @@ body {
   font-family: "Sigmar", sans-serif;
   font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem) !important;
   color: white;
+  overflow: hidden;
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -23,7 +24,7 @@ body {
   --shadow-color: #558abb;
   --margin: 80px;
   --menu-height: 100px;
-  --footer-height: 150px;
+  --footer-height: 130px;
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -35,4 +36,44 @@ body {
 
 .wrapper {
   width: 100%;
+}
+
+.d-none {
+  display: none;
+}
+////////////////////////////////////////////////////////////////////
+/// SCROLLBAR
+////////////////////////////////////////////////////////////////////
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-bg-color-hover);
+  border: 0px none var(--main-bg-color-hover);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-bg-color);
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

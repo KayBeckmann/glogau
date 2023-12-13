@@ -13,3 +13,43 @@
     width: calc(100dvw - 85dvw);
   }
 }
+
+.dialog-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(77, 77, 77, 0.897);
+
+  .dialog-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+
+    .fullscreen {
+      object-fit: contain;
+      height: 90dvh;
+      width: 90dvw;
+    }
+  }
+}
+
+.prev {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+}
+
+.next {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+
+.close {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+}

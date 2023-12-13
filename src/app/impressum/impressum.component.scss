@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 15px;
+  width: auto;
+  height: calc(100dvh - var(--menu-height) - var(--footer-height));
+  overflow-y: auto;
+  background-image: linear-gradient(
+      rgba(85, 138, 187, 0.5),
+      rgba(85, 138, 187, 0.05)
+    ),
+    url("/assets/img/wall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}

@@ -1,24 +1,66 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
 
+type Picture = {
+  id: number;
+  path: string;
+};
 @Component({
   selector: "app-gallery",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatIconModule, MatButtonModule],
   templateUrl: "./gallery.component.html",
   styleUrl: "./gallery.component.scss"
 })
 export class GalleryComponent {
-  path: string = "../../assets/img/";
+  show: boolean = false;
+  pathPicture: string = "../../assets/img/";
+  pathThumbnails: string = "../../assets/thumb/";
+  currentPicture: string = "";
+  pictureID: number = 0;
+
   gallery: any = [
-    { name: this.path + "1.jpeg" },
-    { name: this.path + "2.jpeg" },
-    { name: this.path + "3.jpeg" },
-    { name: this.path + "4.jpeg" },
-    { name: this.path + "5.jpeg" },
-    { name: this.path + "6.jpeg" },
-    { name: this.path + "7.jpeg" },
-    { name: this.path + "8.jpeg" },
-    { name: this.path + "9.jpeg" }
+    "1.jpeg",
+    "2.jpeg",
+    "3.jpeg",
+    "4.jpeg",
+    "5.jpeg",
+    "6.jpeg",
+    "7.jpeg",
+    "8.jpeg",
+    "9.jpeg"
   ];
+
+  openPicture(id: any) {
+    this.currentPicture = this.pathPicture + this.gallery[id];
+    this.show = true;
+  }
+
+  closePicture() {
+    this.show = false;
+  }
+
+  nextPicture() {
+    if (this.pictureID < this.gallery.length - 1) {
+      this.pictureID++;
+    } else {
+      this.pictureID = 0;
+    }
+    this.changeCurrentPicture();
+  }
+
+  prevPicture() {
+    if (this.pictureID > 0) {
+      this.pictureID--;
+    } else {
+      this.pictureID = this.gallery.length - 1;
+    }
+    this.changeCurrentPicture();
+  }
+
+  changeCurrentPicture() {
+    this.currentPicture = this.pathPicture + this.gallery[this.pictureID];
+  }
 }
