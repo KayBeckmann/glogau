@@ -1,0 +1,15 @@
+.wrapper {
+  height: calc(100dvh - var(--menu-height) - var(--footer-height));
+  overflow-y: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  img {
+    height: auto;
+    width: calc(100dvw - 85dvw);
+  }
+}
