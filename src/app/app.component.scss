@@ -5,67 +5,7 @@
   width: 100dvw;
 }
 
-.background {
-  background-color: var(--main-bg-color);
-}
-
 .container {
   width: 100dvw;
   height: 100dvh;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.sidenav {
-  background-color: var(--main-bg-color);
-}
-
-.sidenav-content {
-  height: 100%;
-  width: 100%;
-}
-
-.nav-content {
-  margin-top: 75px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 15px;
-    background-color: var(--main-bg-color);
-
-    &:hover {
-      background-color: var(--main-bg-color-hover);
-    }
-
-    a {
-      color: black;
-      text-decoration: none;
-      font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
-    }
-  }
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
-}
-
-.mat-toolbar-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-////////////////////////////////////////////////////////////////////
-/// IDs
-////////////////////////////////////////////////////////////////////
-#headname {
-  text-decoration: none;
-  color: white;
 }
