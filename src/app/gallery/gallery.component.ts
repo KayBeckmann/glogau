@@ -34,7 +34,8 @@ export class GalleryComponent {
   ];
 
   openPicture(id: any) {
-    this.currentPicture = this.pathPicture + this.gallery[id];
+    this.pictureID = id;
+    this.currentPicture = this.pathPicture + this.gallery[this.pictureID];
     this.show = true;
   }
 

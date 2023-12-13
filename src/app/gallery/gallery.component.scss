@@ -5,12 +5,12 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
 
   img {
     height: auto;
-    width: calc(100dvw - 85dvw);
+    width: 95%;
   }
 }
 
