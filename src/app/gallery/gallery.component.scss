@@ -21,6 +21,7 @@
   height: 100dvh;
   width: 100dvw;
   background-color: rgba(77, 77, 77, 0.897);
+  z-index: 9000;
 
   .dialog-item {
     display: flex;
@@ -34,22 +35,22 @@
       width: 90dvw;
     }
   }
-}
 
-.prev {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-}
+  .prev {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+  }
 
-.next {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-}
+  .next {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+  }
 
-.close {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
+  .close {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+  }
 }
