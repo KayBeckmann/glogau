@@ -29,6 +29,12 @@
     justify-content: center;
     height: 100dvh;
 
+    .description {
+      position: absolute;
+      text-align: center;
+      top: var(--padding);
+    }
+
     .fullscreen {
       object-fit: contain;
       height: 90dvh;

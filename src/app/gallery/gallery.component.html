@@ -3,7 +3,7 @@
     <img
       class="pointer"
       *ngFor="let picture of gallery; let i = index"
-      src="{{ pathThumbnails + picture }}"
+      src="{{ pathThumbnails + picture.name }}"
       alt=""
       (click)="openPicture(i)"
     />
@@ -12,6 +12,7 @@
 
 <div class="dialog-container" [hidden]="!show">
   <div class="dialog-item">
+    <!-- <div class="description" [innerHTML]="currentDescription"></div> -->
     <img class="fullscreen" [src]="currentPicture" alt="" />
   </div>
   <button mat-fab color="primary" class="prev" (click)="prevPicture()">
