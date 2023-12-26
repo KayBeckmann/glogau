@@ -5,6 +5,10 @@
   font-family: "Sigmar";
   src: url(./assets/fonts/Sigmar-Regular.ttf);
 }
+@font-face {
+  font-family: "Wix";
+  src: url(./assets/fonts/WixMadeforDisplay.ttf);
+}
 ////////////////////////////////////////////////////////////////////
 /// ELEMENTS
 ////////////////////////////////////////////////////////////////////
@@ -15,9 +19,11 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background-color: var(--main-bg-color);
-  font-family: "Sigmar", sans-serif;
-  font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem) !important;
+  background-image: url("/assets/img/wall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Wix", sans-serif !important;
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem) !important;
   color: white;
   overflow: hidden;
 }
@@ -26,13 +32,13 @@ body {
 /// VARIABLES
 ////////////////////////////////////////////////////////////////////
 :root {
-  --main-bg-color: rgb(63, 81, 181);
-  --main-bg-color-hover: #3281ca;
-  --shadow-color: rgb(63, 81, 181);
+  --main-bg-color: rgba(99, 99, 99, 0);
+  --main-bg-color-hover: rgba(99, 99, 99, 0);
+  --shadow-color: rgba(99, 99, 99, 0);
   --margin: 80px;
   --padding: 15px;
   --menu-height: 100px;
-  --footer-height: 130px;
+  --footer-height: 110px;
 }
 
 ////////////////////////////////////////////////////////////////////
