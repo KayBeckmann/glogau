@@ -1,5 +1,6 @@
 .wrapper {
   display: grid;
+  max-width: 100dvw;
   height: calc(100dvh - var(--menu-height) - var(--footer-height));
   grid-template-columns: 2fr 5fr 4fr;
   gap: var(--padding);
@@ -23,8 +24,9 @@
 @media screen and (max-width: 600px) {
   .wrapper {
     grid-template-columns: 1fr;
-    overflow-y: auto;
-    padding-left: var(--padding);
-    padding-right: var(--padding);
+
+    .gallery {
+      grid-column: auto;
+    }
   }
 }

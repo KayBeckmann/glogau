@@ -1,6 +1,6 @@
 .wrapper {
   padding: 15px;
-  width: auto;
+  max-width: 100dvw;
   height: calc(100dvh - var(--menu-height) - var(--footer-height));
   overflow-y: auto;
   color: white;
