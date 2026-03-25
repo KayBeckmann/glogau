@@ -1,27 +1,55 @@
-# Glogau
+# Glogau Bauunternehmen
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+Website des Bauunternehmens Glogau aus Menzendorf (Schleswig-Holstein/Mecklenburg-Vorpommern).
 
-## Development server
+## Leistungen
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Fliesenarbeiten
+- Dämmung
+- Sanierung
+- Trockenbauarbeiten
+- Abbruch & Entsorgungsfahrten
+- Natursteinarbeiten
+- Dienstleistungen rund um's Haus
+- Vermittlung von Bauleistungen
+- Immobilienservice
+- Begleitung & Beratung bei Immobilienbesichtigungen
+- Subunternehmer-Tätigkeiten
 
-## Code scaffolding
+## Technik
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Reine HTML + CSS + JavaScript Website ohne Build-Prozess oder Abhängigkeiten.
 
-## Build
+### Projektstruktur
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+├── index.html          # Hauptseite
+├── impressum.html      # Impressum
+├── css/style.css       # Stylesheet
+├── js/main.js          # JavaScript
+└── assets/
+    ├── favicon.ico
+    ├── img/            # Projektbilder & Hintergründe
+    └── thumb/          # Thumbnails für die Galerie
+```
 
-## Running unit tests
+### Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Responsives Design (Mobile, Tablet, Desktop)
+- Bildergalerie mit Lightbox und Tastatursteuerung
+- Scroll-Animationen
+- Mobile Navigation
 
-## Running end-to-end tests
+## Deployment
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Die Seite kann direkt auf jedem Webserver oder Hosting-Anbieter bereitgestellt werden. Es ist kein Build-Schritt nötig -- einfach alle Dateien hochladen.
 
-## Further help
+## Kontakt
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Glogau Bauunternehmen**
+Inh. Jennifer Glogau
+Hauptstraße 28, 23923 Menzendorf
+
+- Telefon: 038828 / 34 700 0
+- Mobil: 0173 / 219 555 3
+- E-Mail: info@glogau-bau.de
