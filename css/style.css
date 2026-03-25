@@ -178,7 +178,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('../src/assets/img/wall1.jpg') center/cover no-repeat;
+  background: url('../assets/img/wall1.jpg') center/cover no-repeat;
   color: var(--color-white);
 }
 
